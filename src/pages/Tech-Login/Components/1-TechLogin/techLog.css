@@ -1,0 +1,359 @@
+/* ---------------
+1) General Styles
+----------------- */
+
+section.TechLogin {
+    background: linear-gradient(95deg, #FFC527 15%, #222222 50%, #FFC527 100%);
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.TechLogin .container {
+    position: relative;
+    background-color: white;
+    width: 90%; 
+    margin: auto;
+    padding: 8rem 3rem; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+section.TechLogin .container .title {
+    align-items: center;
+    padding: 1rem;
+    font-family: 'Cairo-700';
+    margin-bottom: 1rem;
+    text-align: start;
+}
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0 1000px white inset !important;
+    -webkit-text-fill-color: #000 !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+  
+section.TechLogin .box input,
+section.TechLogin .box textarea {
+    width: 98%; 
+    height: 45px;
+    padding: 10px 20px;
+    margin: 0.8rem;
+    border: 2px solid #ccc;
+    border-radius: 26px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease; 
+}
+
+section.TechLogin .box input:focus,
+section.TechLogin .box textarea:focus {
+    border-color: rgba(255, 197, 39, 1); 
+}
+
+section.TechLogin .container .box label {
+    position: absolute;
+    right: 4.9rem; 
+    background-color: white;
+    font-size: .92rem;
+    font-family: 'Cairo-600';
+    color: rgb(90, 87, 87);
+    pointer-events: none; 
+    transition: all 0.3s ease;
+}
+
+section.TechLogin .container .box button {
+    background: linear-gradient(95deg, #222222 20%, #FFC527 100%);
+    width: 500px;
+    height: 45px;
+    border-radius: 50px;
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+    margin-right: 0.5rem;
+    text-align: center;
+    color: #fff;
+    border: none; 
+    cursor: pointer; 
+}
+
+section.TechLogin .container .box button:hover {
+    background-color: rgba(230, 177, 35, 1);
+}
+
+section.TechLogin .container .comSec {
+    gap: 12rem; 
+    justify-content: center;
+    align-items: center;
+}
+
+section.TechLogin .container .comSec p {
+    font-size: 0.7rem;
+    color: #7d7b7b;
+    margin-bottom: 0.9rem;
+}
+
+section.TechLogin .container .comSec .ImgComplaint {
+    width: 95%;
+    margin-left: 4rem;
+    margin-top: 13rem;
+}
+
+section.TechLogin .container .comSec .ImgComplaint img {
+    width: 100%; 
+}
+
+section.TechLogin .container .comSec .remind {
+    gap: 21rem; 
+}
+
+section.TechLogin .container .comSec .remind a {
+    font-size: 0.76rem;
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+
+section.TechLogin .container .comSec .remind a:hover {
+    color: #FFC527;
+}
+
+section.TechLogin .container .comSec .remind .check label {
+    font-size: 0.76rem;
+    margin-top: .4rem;
+    margin-right: 1.2rem;
+}
+
+section.TechLogin .container .comSec .remind .check input {
+    position: relative;
+    margin-right: 2rem;
+    bottom: 1.2rem;
+}
+section.TechLogin .container .parg{
+    margin-top: .8rem;
+    font-weight: bold;
+}
+section.TechLogin .container .parg a{
+    color: #FFC527;
+    margin-right: .3rem;
+    border-bottom: 1px solid #FFC527;
+}
+
+section.TechLogin .password-wrapper {
+    position: relative;
+  }
+  section.TechLogin .toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 29.5rem; 
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem; 
+    color: #888; 
+    }   
+
+section.TechLogin .passLabel{
+    position: relative;
+    z-index: 11;
+    }
+/* ---------------
+2) Responsive Design
+----------------- */
+
+@media (max-width: 1200px) {
+    section.TechLogin  .container {
+        padding: 3rem 1.5rem;
+    }
+
+    section.TechLogin .container .comSec .ImgComplaint {
+        display: none;
+    }
+
+    section.TechLogin .container .box button {
+        margin-right: 0;
+    }   
+ 
+    section.TechLogin  .container .box label {
+        right: 16.6rem;
+    }
+    section.TechLogin  .container .box button {
+        width: 450px;
+        margin-right: 1rem;
+    }
+    section.TechLogin  .box input,
+    section.TechLogin .box textarea {
+    width:100%;
+    }
+    section.TechLogin  .container .box .opts label{
+        bottom: 2.3rem;
+        right:4rem;
+    }
+    section.TechLogin .toggle-icon {
+        right: 27.9rem;  
+    }
+    section.TechLogin .container .comSec .remind .check label {
+        margin-right: .6rem;
+
+    }
+    section.TechLogin.container .comSec .remind {
+        gap: 20.4rem; 
+    }
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 992px) {
+    section.TechLogin  .container {
+        padding: 3rem 1.5rem;
+    }
+
+    section.TechLogin .container .comSec .ImgComplaint {
+        display: none;
+    }
+    section.TechLogin .container .box button {
+        margin-right: 0;
+    }
+    section.TechLogin .container .box label {
+        right: 9.8rem;
+    }
+    section.TechLogin .container .box button {
+        width: 450px;
+        margin-right: 1rem;
+    }
+    section.TechLogin  .box input,
+    section.TechLogin .box textarea {
+    width:100%;
+    }
+    section.TechLogin   .container .box .opts label{
+        bottom: 2.3rem;
+        right:4rem;
+    }
+    section.TechLogin  .toggle-icon {
+        right: 27.9rem;  
+    }
+    section.TechLogin.container .comSec .remind .check label {
+        margin-right: .7rem;
+
+    }
+    section.TechLogin .container .comSec .remind {
+        gap: 20.4rem; 
+    }
+    
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    section.TechLogin  .container {
+        padding: 2rem 1rem;
+    }
+
+    section.TechLogin.container .comSec .ImgComplaint {
+        display: none;
+    }
+
+    section.TechLogin  .container .box button {
+        margin-right: 0;
+    }
+
+    section.TechLogin .container .box label {
+        right: 4rem;
+    }
+    section.TechLogin  .container .box button {
+        width: 450px;
+        margin-right: 1rem;
+    }
+    section.TechLogin   .box input,
+    section.TechLogin.box textarea {
+    width:100%;
+    }
+    section.TechLogin  .container .box .opts label{
+        bottom: 2.3rem;
+        right:4rem;
+    }
+    section.TechLogin  .toggle-icon {
+        right: 27.9rem;  
+    }
+    section.TechLogin .container .comSec .remind .check label {
+        margin-right: 1rem;
+
+    }
+    section.TechLogin .container .comSec .remind {
+        gap: 20.4rem; 
+    }
+}
+
+/* For screens smaller than 576px */
+@media (max-width: 576px) {
+    section.TechLogin .container {
+        padding: 4rem 0.5rem;
+    }
+    section.TechLogin .container .ImgComplaint {
+        display: none;
+    }
+
+    section.TechLogin  .container .box button {
+        margin-right: 0;
+    }
+
+    section.TechLogin  .container .box label {
+        right: 3rem;
+    }
+    section.TechLogin  .container .box button {
+        width: 410px;
+        margin-right: 1rem;
+    }
+    section.TechLogin .box input,
+    section.TechLogin  .box textarea {
+    width:95%;
+    }
+    section.TechLogin  .container .box .opts label{
+        bottom: 2.3rem;
+        right:4rem;
+    }
+    section.TechLogin .toggle-icon {
+        right: 23.5rem;  
+    }
+    section.TechLogin .container .comSec .remind .check label {
+        margin-right: .8rem;
+
+    }
+    section.TechLogin .container .comSec .remind {
+        gap: 16rem; 
+    }
+}
+@media (max-width: 470px) {
+    section.TechLogin .container {
+        padding: 4rem 0.5rem;
+    }
+    section.TechLogin .container .ImgComplaint {
+        display: none;
+    }
+
+    section.TechLogin  .container .box button {
+        margin-right: 0;
+    }
+
+    section.TechLogin  .container .box label {
+        right: 3.4rem;
+    }
+    section.TechLogin  .container .box button {
+        width: 340px;
+        margin-right: 1rem;
+    }
+    section.TechLogin .box input,
+    section.TechLogin  .box textarea {
+    width:95%;
+    }
+    section.TechLogin  .container .box .opts label{
+        bottom: 2.3rem;
+        right:4rem;
+    }
+    section.TechLogin .toggle-icon {
+        right: 19.5rem;  
+    }
+    section.TechLogin .container .comSec .remind .check label {
+        margin-right: .8rem;
+
+    }
+    section.TechLogin .container .comSec .remind {
+        gap: 12rem; 
+    }
+}

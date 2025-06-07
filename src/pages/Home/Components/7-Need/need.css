@@ -1,0 +1,84 @@
+/* *Code Structure *
+1) Code Section
+2) Responsive
+*/
+
+/* ---------------
+1) Code Section
+----------------- */
+section.Need {
+    background-color: rgba(34, 34, 34, 1);
+    margin-top: 5rem;
+}
+section.Need .container {
+    width: 80%;
+    margin: auto;
+    display: flex; 
+    align-items: center;
+    gap: 25rem; 
+}
+section.Need .text {
+    color: white;
+}
+section.Need .text h4 {
+    font-family: 'Cairo-700';
+    font-size: 1.8rem;
+}
+section.Need .text button {
+    background-color: white;
+    color: rgba(104, 99, 99, 1);
+    padding: .5rem .9rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+    border: none; 
+    cursor: pointer; 
+}
+section.Need .text button:hover {
+    background-color: rgb(225, 223, 223);
+}
+
+/* ---------------
+2) Responsive
+----------------- */
+@media (max-width: 1200px) {
+    section.Need .container {
+        gap: 15rem;
+    }
+}
+
+@media (max-width: 992px) {
+    section.Need .container {
+        gap: 10rem; 
+    }
+    section.Need .text h4 {
+        font-size: 1.6rem; 
+    }
+}
+
+@media (max-width: 768px) {
+    section.Need .container {
+        flex-direction: column; 
+        gap: 2rem; 
+        text-align: center; 
+    }
+    section.Need .text h4 {
+        font-size: 1.4rem; 
+    }
+    section.Need .text button {
+        margin-top: 0.5rem; 
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    section.Need .container {
+        width: 90%; 
+    }
+    section.Need .text h4 {
+        font-size: 1.2rem; 
+    }
+    section.Need .text button {
+        padding: 0.4rem 0.8rem; 
+        margin-bottom: 2rem;
+    }
+}

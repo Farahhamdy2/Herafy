@@ -1,0 +1,173 @@
+/* *Code Structure *
+1)Call code
+2)Responsive
+*/
+
+/* ---------------
+1)Call code
+----------------- */
+.call .container .secCall {
+    gap: 5rem;
+    margin-bottom:6rem;
+}
+
+.call .container .titlee {
+    align-items: center;
+}
+
+.call .container .titlee h4 {
+    font-family: 'Cairo-700';
+    font-size: 1.4rem;
+}
+
+.call .container form {
+    position: relative;
+}
+
+.call .container .box {
+    margin: 3rem;
+    padding: 2rem;
+    width: 600px;
+    border: 2px solid rgba(217, 215, 215, 0.742);
+    border-radius: 50px;
+    padding-left: 4rem;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.call .container .box input,
+.call .container .box textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 0.8rem;
+    border: 2px solid #ccc;
+    border-radius: 26px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.call .container .box input {
+    margin-bottom: 1.8rem;
+}
+
+.call .container .box label {
+    position: absolute;
+    right: 2rem;
+    background-color: white;
+    font-size: 1rem;
+    font-family: 'Cairo-600';
+    color: rgb(90, 87, 87);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.call .container .box input:focus,
+.call .container .box textarea:focus {
+    border-color: rgba(255, 197, 39, 1);
+}
+
+.call .container .box p {
+    color: rgba(255, 197, 39, 1);
+    font-size: 0.9rem;
+    text-align: start;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.call .container .box button {
+    background-color: rgba(255, 197, 39, 1);
+    padding: 0.7rem 4rem;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    width: 200px;
+}
+
+.call .container .box button:hover {
+    background-color: rgba(230, 177, 35, 1);
+}
+
+.call .container .animation{
+    margin-top: 7rem;
+    margin-right: 4.5rem;
+}
+
+/* ---------------
+2)Responsive
+----------------- */
+
+@media (max-width: 1200px) {
+    .call .container .box {
+        width: 500px;
+        padding-left: 3rem;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .call .container .secCall {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .call .container .box {
+        width: 80%;
+        margin: 2rem auto;
+        padding-left: 3.4rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .call .container .box {
+        width: 90%;
+        padding: 1.5rem;
+        padding-left: 2.7rem;
+    }
+
+    .call .container .box input,
+    .call .container .box textarea {
+        font-size: 0.9rem;
+    }
+
+    .call .container .box label {
+        font-size: 0.9rem;
+    }
+
+    .call .container .box button {
+        padding: 0.6rem 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .call .container .box {
+        width: 100%;
+        padding: 1rem;
+        padding-left: 2rem;
+        margin: 1rem auto;
+    }
+
+    .call .container .box input,
+    .call .container .box textarea {
+        font-size: 0.8rem;
+    }
+
+    .call .container .box label {
+        font-size: 0.85rem;
+        right: 2.1rem;
+    }
+
+    .call .container .box button {
+        padding: 0.5rem 2.7rem;
+    }
+
+    .call .container .blueBox .social .iconSocial {
+        width: 25px;
+        height: 25px;
+        margin: 0.5rem;
+    }
+    .call .container .animation{
+        margin-top: 0rem;
+        margin-right: 0rem;
+    }
+}

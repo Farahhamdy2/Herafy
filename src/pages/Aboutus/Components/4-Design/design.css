@@ -1,0 +1,72 @@
+/* *Code Structure *
+1)Design code
+2)responsive
+*/
+
+/* ---------------
+1)Design code
+----------------- */
+section.design{
+    border-top: 1px solid black;
+    margin-top: 9rem;
+}
+section.design .container{
+    width: 75%;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+    font-family: 'Cairo-700';
+    font-size: 1.32rem;
+}
+section.design .container .line{
+    justify-content: center;
+    padding: .5rem;
+}
+section.design .container .line p{
+    margin-top: 3.8rem;
+}
+section.design .container .line div{
+    padding: 0 1.3rem;
+}
+section.design .container .line .image,.arrImg{
+    margin-top: 2rem;
+}
+section.design .container .line .sunImg{
+    margin-top: 1.6rem;
+
+}
+
+/* ---------------
+2)responsive
+----------------- */
+@media (max-width: 1024px) {
+    section.design .container {
+        width: 85%;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section.design .container {
+        width: 90%;
+        font-size: 1.1rem;
+    }
+    section.design .container .line {
+        flex-direction: column;
+        align-items: center;
+    }
+    section.design .container .line div {
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    section.design .container {
+        width: 95%;
+        font-size: 1rem;
+    }
+    section.design .container .line p {
+        margin-top: 2rem;
+    }
+}
+

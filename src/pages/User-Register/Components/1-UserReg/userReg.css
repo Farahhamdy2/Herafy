@@ -1,0 +1,248 @@
+/* *Code Structure *
+1)Comments code
+2)Responsive
+*/
+
+/* ---------------
+1) Comments code
+----------------- */
+section.UserReg {
+    background: linear-gradient(95deg, #FFC527 15%, #222222 50%, #FFC527 100%);
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.UserReg .container {
+    position: absolute;
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    padding:1rem 3rem;
+}
+
+section.UserReg .container .title {
+    align-items: center;
+    padding: 1rem;
+    font-family: 'Cairo-700';
+    margin-bottom: 1rem;
+}
+
+section.UserReg .container .title .iconn {
+    margin-left: .6rem;
+}
+
+section.UserReg .box {
+    text-align: start;
+}
+
+section.UserReg .box input,
+section.UserReg .box textarea {
+    width: 98%;
+    height:45px;
+    padding: 10px 20px;
+    margin: 0.8rem;
+    border: 2px solid #ccc;
+    border-radius: 26px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+input:-webkit-autofill {
+    box-shadow: 0 0 0 1000px white inset !important;
+    -webkit-text-fill-color: #000 !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+section.UserReg .container .box input {
+    margin-bottom: 1.8rem;
+}
+
+section.UserReg .container .box label {
+    position: absolute;
+    right: 5rem;
+    background-color: white;
+    font-size: .94rem;
+    font-family: 'Cairo-600';
+    color: rgb(90, 87, 87);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+section.UserReg  .container .box .not{
+    background-color: transparent;
+}
+section.UserReg .container .box select{
+    border: 2px solid #ccc;
+    border-radius: 26px;
+    padding: .2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.4rem;
+    margin-right: 1.7rem;
+}
+
+section.UserReg .box input:focus,
+section.UserReg .box textarea:focus {
+    border-color: rgba(255, 197, 39, 1);
+}
+
+section.UserReg .container .box button {
+    background: linear-gradient(95deg, #222222 20%, #FFC527 100%);
+    width: 500px;
+    height:45px;
+    border-radius: 50px;
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+    margin-right: 3rem;
+    text-align: center;
+    color: #fff;
+}
+
+section.UserReg .container .box button:hover {
+    background-color: rgba(230, 177, 35, 1);
+}
+
+section.UserReg .container .comSec {
+    gap: 12rem;
+    justify-content: center;
+    align-items: center;
+}
+
+section.UserReg .container .comSec .ImgComplaint {
+    width: 95%;
+    margin-left: 4rem;
+    margin-top: 15rem;
+}
+
+section.UserReg .container .comSec .ImgComplaint img {
+    width: 100%;
+}
+
+section.UserReg .container .box .parg{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: .7rem;
+    font-weight: bold;
+}
+
+section.UserReg .container .box .parg a{
+    margin-right: .5rem;
+    color: #FFC527;
+    text-decoration: underline;
+}
+
+/* ---------------
+2) Responsive
+----------------- */
+
+@media (max-width: 1200px) {
+    section.UserReg .container {
+        padding: 4rem 2rem;
+    }
+
+    section.UserReg .container .comSec {
+        gap: 8rem;
+    }
+
+    section.UserReg .container .comSec .ImgComplaint {
+        width: 40%;
+    }
+}
+
+@media (max-width: 992px) {
+    section.UserReg .container {
+        padding: 3rem 1.5rem;
+    }
+
+    section.UserReg .container .comSec .ImgComplaint {
+        display: none;
+    }
+
+    section.UserReg .container .box button {
+        width: 100%; 
+        max-width: 600px; 
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+
+    section.UserReg .container .box label {
+        right: 2rem;
+    }
+
+    section.UserReg .box input,
+    section.UserReg .box textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    section.UserReg .container {
+        padding: 2rem 1rem;
+    }
+
+    section.UserReg .container .comSec .ImgComplaint {
+        display: none;
+    }
+
+    section.UserReg .container .box button {
+        width: 100%;
+        max-width: 450px;
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+
+    section.UserReg .container .box label {
+        right: 2rem;
+    }
+
+    section.UserReg .box input,
+    section.UserReg .box textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    section.UserReg .container {
+        padding: 1rem 0.5rem;
+    }
+
+    section.UserReg .container .comSec .ImgComplaint {
+        display: none;
+    }
+
+    section.UserReg .container .box button {
+        width: 100%;
+        max-width: 410px;
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+
+    section.UserReg .box input,
+    section.UserReg .box textarea {
+        width: 93%;
+    }
+}
+@media (max-width: 470px) {
+    section.UserReg .container {
+        padding: 1rem 0.5rem;
+    }
+
+    section.UserReg .container .comSec .ImgComplaint {
+        display: none;
+    }
+
+    section.UserReg .container .box button {
+        width: 100%;
+        max-width: 410px;
+        margin-right: 0;
+        margin-top: 0rem;
+    }
+
+    section.UserReg .container .box label {
+        right: 2.4rem;
+    }
+
+    section.UserReg .box input,
+    section.UserReg .box textarea {
+        width: 95%;
+    }
+}

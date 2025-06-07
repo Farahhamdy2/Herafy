@@ -1,0 +1,140 @@
+/* *Code Structure *
+1) Right Section
+2) Left Section
+3) Responsive
+*/
+
+/* ---------------
+1) Right Section
+----------------- */
+.container {
+    justify-content: center;
+    margin-top: 4rem;
+}
+.container .RightSecc {
+    text-align: start;
+    background-color: rgba(249, 249, 249, 1);
+    padding: 4rem 2.5rem;
+    border-top-left-radius: 90px;
+    width: 500px;
+}
+.container .RightSecc h5 {
+    padding-top: .7rem;
+}
+.container .RightSecc .stars {
+    padding-bottom: 1.6rem;
+}
+.container .RightSecc p {
+    padding-bottom: 2rem;
+}
+.container .RightSecc hr {
+    color: rgba(255, 197, 39, 1);
+}
+.container .RightSecc .username h6:first-child {
+    font-family: 'Cairo-700';
+    padding-top: .6rem;
+}
+.container .RightSecc .username h6:last-child {
+    font-size: .7rem;
+}
+.container .RightSecc .user {
+    align-items: center;
+    padding-top: 1.3rem;
+}
+.container .RightSecc .user .userImg img {
+    width: 80%;
+}
+
+.stars {
+    margin-bottom: 1.5rem;
+    unicode-bidi: bidi-override;
+  }
+  
+  .star {
+    font-size: 1rem;
+    color: #ddd;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .star.full {
+    color: #ffc107;
+  }
+  
+  .star.half::before {
+    content: '★';
+    color: #ffc107;
+    position: absolute;
+    width: 50%;
+    overflow: hidden;
+  }
+/* ---------------
+2) Left Section
+----------------- */
+.LeftSec .image img {
+    width: 80%;
+    margin-top: 8rem;
+}
+
+/* ---------------
+3) Responsive
+----------------- */
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .container .RightSecc {
+        width: 90%;
+        border-top-left-radius: 60px; 
+    }
+    .LeftSec .image img {
+        padding-top: 4rem; 
+    }
+}
+
+@media (max-width: 992px) {
+    .container .RightSecc {
+        padding: 3rem 2rem; 
+    }
+    .LeftSec .image img {
+        width: 70%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .container .RightSecc {
+        padding: 2rem 1.5rem; 
+        border-top-left-radius: 40px; 
+    }
+    .container .RightSecc h5 {
+        font-size: 1.2rem; 
+    }
+    .container .RightSecc p {
+        font-size: 0.9rem; 
+    }
+    .LeftSec .image img {
+        padding-top: 2rem; 
+    }
+}
+
+@media (max-width: 576px) {
+    .container .RightSecc {
+        width: 100%; 
+        padding: 1.5rem 1rem; 
+        border-top-left-radius: 30px; 
+    }
+    .container .RightSecc h5 {
+        font-size: 1rem; 
+    }
+    .container .RightSecc p {
+        font-size: 0.8rem; 
+    }
+    .container .RightSecc .username h6:last-child {
+        font-size: 0.6rem; 
+    }
+    .LeftSec .image img {
+        width: 90%;
+        padding-top: 1rem; 
+    }
+}

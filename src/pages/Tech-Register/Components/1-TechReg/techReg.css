@@ -1,0 +1,259 @@
+/* *Code Structure *
+1)Comments code
+2)Responsive
+*/
+
+/* ---------------
+1) Comments code
+----------------- */
+section.TechRegister {
+    background: linear-gradient(95deg, #FFC527 15%, #222222 50%, #FFC527 100%);
+    height: 165vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.TechRegister  .container {
+    position: absolute;
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    padding: 1.3rem 3rem;
+}
+
+section.TechRegister  .container .title {
+    align-items: center;
+    padding: 1rem;
+    font-family: 'Cairo-700';
+    margin-bottom: 1rem;
+}
+
+section.TechRegister  .container .title .iconn {
+    margin-left: .6rem;
+}
+
+section.TechRegister  .box {
+    text-align: start;
+}
+
+section.TechRegister  .box input,
+section.TechRegister .box textarea {
+    width: 98%;
+    height:45px;
+    padding: 10px 20px;
+    margin: 0.8rem;
+    border: 2px solid #ccc;
+    border-radius: 26px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0 1000px white inset !important;
+    -webkit-text-fill-color: #000 !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+section.TechRegister  .container .box input {
+    margin-bottom: 1.2rem;
+}
+section.TechRegister  .container .box label {
+    position: absolute;
+    right: 5rem;
+    background-color: white;
+    font-size: 1rem;
+    font-family: 'Cairo-600';
+    color: rgb(90, 87, 87);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+section.TechRegister .box input:focus,
+section.TechRegister .box textarea:focus {
+    border-color: rgba(255, 197, 39, 1);
+}
+
+section.TechRegister  .container .box button {
+    background: linear-gradient(95deg, #222222 20%, #FFC527 100%);
+    width: 500px;
+    height:45px;
+    border-radius: 50px;
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+    margin-right: .5rem;
+    text-align: center;
+    color: #fff;
+}
+
+section.TechRegister  .container .box button:hover {
+    background-color: rgba(230, 177, 35, 1);
+}
+section.TechRegister  .container .box .not{
+    background-color: transparent;
+}
+section.TechRegister .container .box select{
+    border: 2px solid #ccc;
+    border-radius: 26px;
+    padding: .2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.4rem;
+}
+section.TechRegister  .container .box .opts{
+    justify-content: center;
+    align-items: center;
+}
+section.TechRegister  .container .box .opts label{
+    position: relative;
+    background-color: transparent;
+    bottom: 2.3rem;
+    right:4rem;
+    font-size: .8rem;
+}
+
+section.TechRegister  .container .box .opts .opt{
+    margin-top: 1.7rem;
+}
+
+section.TechRegister  .container .box .padtop {
+    margin-top: 2rem;
+    height: 90px;
+}
+section.TechRegister  .container .box .parg{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: .7rem;
+    font-weight: bold;
+}
+section.TechRegister  .container .box .parg a{
+    margin-right: .5rem;
+    color: #FFC527;
+    border-bottom:1px solid #FFC527;
+}
+section.TechRegister  .container .comSec {
+    gap: 12rem;
+    justify-content: center;
+    align-items: center;
+}
+
+section.TechRegister  .container .comSec .ImgComplaint {
+    width:100%;
+    margin-left: 4rem;
+    margin-top: 9rem;
+}
+
+section.TechRegister  .container .comSec .ImgComplaint img {
+    width: 100%;
+}
+.note-text{
+    font-size: .65rem;
+    color: red;
+}
+
+/* ---------------
+2) Responsive
+----------------- */
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+    section.TechRegister .container {
+        padding: 4rem 2rem;
+    }
+
+    section.TechRegister .container .comSec {
+        gap: 8rem;
+    }
+
+    section.TechRegister .container .comSec .ImgComplaint {
+        width: 40%;
+    }
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 992px) {
+    section.TechRegister .container {
+        padding: 3rem 1.5rem;
+    }
+
+    section.TechRegister .container .comSec .ImgComplaint {
+        display: none;
+    }
+
+    section.TechRegister .container .box button {
+        margin-right: 0;
+    }
+
+    section.TechRegister .container .box label {
+        right: 2rem;
+    }
+    section.TechRegister .container .box button {
+        width: 600px;
+        margin-right: 1rem;
+    }
+    section.TechRegister  .box input,
+    section.TechRegister  .box textarea {
+    width:100%;
+    }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    section.TechRegister .container {
+        padding: 2rem 1rem;
+    }
+
+    section.TechRegister .container .comSec .ImgComplaint {
+        display: none;
+    }
+
+    section.TechRegister  .container .box button {
+        margin-right: 0;
+    }
+
+    section.TechRegister  .container .box label {
+        right: 2rem;
+    }
+    section.TechRegister  .container .box button {
+        width: 450px;
+        margin-right: 1rem;
+    }
+    section.TechRegister  .box input,
+    section.TechRegister  .box textarea {
+    width:100%;
+    }
+}
+
+/* For screens smaller than 576px */
+@media (max-width: 576px) {
+    section.TechRegister  .container {
+        padding: 1rem 0.5rem;
+    }
+    section.TechRegister  .container .comSec .ImgComplaint {
+        display: none;
+    }
+
+    section.TechRegister  .container .box button {
+        margin-right: 0;
+    }
+
+    section.TechRegister  .container .box label {
+        right: 2rem;
+    }
+    section.TechRegister  .container .box button {
+        width: 410px;
+        margin-right: 1rem;
+    }
+    section.TechRegister  .box input,
+    section.TechRegister  .box textarea {
+    width:95%;
+    }
+    .note-text{
+        font-size: .55rem;
+        color: red;
+    }
+    section.TechRegister  .container .box .opts label{
+        bottom: 2.3rem;
+        right:4rem;
+    }
+
+}

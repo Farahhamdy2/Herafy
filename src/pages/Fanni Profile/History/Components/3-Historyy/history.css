@@ -1,0 +1,436 @@
+/* *Code Structure *
+1)TechHistory code
+2)Responsive
+*/
+
+/* ---------------
+1) TechHistory code
+----------------- */
+section.HistoryTech .header {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 197, 39, 1);
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Cairo-600';
+    margin-bottom: 2rem;
+}
+
+section.HistoryTech .header .titleHeader {
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+}
+
+section.HistoryTech .header .titleHeader span {
+    margin-bottom: .3rem;
+}
+
+section.HistoryTech .container {
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+section.HistoryTech .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 2em;
+}
+
+section.HistoryTech .buttons button {
+    margin-bottom: 2rem;
+    width: 190px;
+    height: 67px;
+    border-radius: 23px;
+    background-color: rgba(217, 217, 217, 0.38);
+}
+
+section.HistoryTech .buttons .activeTech {
+    background-color: rgba(209, 194, 153, 1);
+    font-family: 'Cairo-700';
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.379);
+}
+section.HistoryTech .container .square {
+    width: 640px;
+    padding: 3rem;
+    border-radius: 26px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.44);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-right: 2rem;
+}
+section.HistoryTech .container .square h5 {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+section.HistoryTech .container .square .smallSqr {
+    border: .5px solid rgba(187, 185, 185, 1);
+    width: 410px;
+    text-align: start;
+    padding: 1rem;
+    border-radius: 16px;
+    border-color: rgb(221, 221, 185);
+    margin-bottom: 2rem;
+}
+section.HistoryTech .container .current .smallSqr  {
+    margin-bottom: 1rem;
+    border-color: rgb(199, 155, 36);
+}
+section.HistoryTech .container .current .smallSqr .btns{
+    gap: 2rem;
+}
+section.HistoryTech .container .current .smallSqr button {
+    width: 115px;
+    height: 30px;
+    background-color: rgba(255, 197, 39, 1);
+    text-align: center;
+    font-size: .88rem;
+    border-radius: 8px;
+    color: white;
+}
+section.HistoryTech .container .square .smallSqr button:first-child{
+    margin-right: 3rem;
+}
+section.HistoryTech .container .approve .smallSqr  {
+    margin-bottom: 1rem;
+}
+section.HistoryTech .container .approve .smallSqr .btns{
+    gap: 2rem;
+}
+section.HistoryTech .container .approve .smallSqr button {
+    width: 120px;
+    height: 30px;
+    background-color: rgba(255, 197, 39, 1);
+    text-align: center;
+    font-size: .78em;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Cairo-600';
+}
+section.HistoryTech .container .approve .smallSqr button:last-child {
+    background-color: rgba(58, 60, 62, 0.494);
+}
+
+section.HistoryTech .square {
+overflow: hidden; 
+display: flex;
+flex-direction: column;
+}
+section.HistoryTech .bookings-container {
+flex: 1; 
+overflow-y: auto; 
+padding-right: 5px; 
+}
+section.HistoryTech .bookings-container::-webkit-scrollbar {
+ width: 5px;
+}
+
+section.HistoryTech .bookings-container::-webkit-scrollbar-track {
+background: #f1f1f1;
+border-radius: 10px;
+}
+
+section.HistoryTech .bookings-container::-webkit-scrollbar-thumb {
+background: #888;
+border-radius: 10px;
+}
+
+section.HistoryTech .bookings-container::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
+section.HistoryTech .btnCurr {
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px;
+    transition: all 0.3s ease;
+    width: 300px;
+  }
+ 
+section.HistoryTech .btnCurr:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+ section.HistoryTech .loading-text {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+section.HistoryTech .loading-text::after {
+    content: "...";
+    animation: dots 1.5s steps(5, end) infinite;
+    width: 0;
+  }
+  
+  @keyframes dots {
+    0%, 20% { content: "."; }
+    40% { content: ".."; }
+    60%, 100% { content: "..."; }
+  }
+
+  /* Modal Styles */
+section.HistoryTech  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+section.HistoryTech  .service-modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    direction: rtl;
+  }
+  
+section.HistoryTech  .service-modal h3 {
+    margin-bottom: 50px;
+    text-align: center;
+    color: #333;
+  }
+  
+section.HistoryTech  .form-group {
+    margin-bottom: 15px;
+  }
+  
+section.HistoryTech .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+section.HistoryTech .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+section.HistoryTech  .form-group textarea {
+    min-height: 100px;
+  }
+  
+section.HistoryTech .modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+section.HistoryTech .modal-actions button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+section.HistoryTech .modal-actions button:first-child {
+    background-color: #f44336;
+    color: white;
+  }
+  
+section.HistoryTech .modal-actions button:last-child {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+section.HistoryTech .modal-actions button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* Loading text */
+.loading-text {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+section.HistoryTech  .bold{
+    font-weight: bold;
+  }
+/* ---------------
+2) Responsive
+----------------- */
+@media (max-width: 1200px) {
+    section.HistoryTech .container .square {
+        width: 550px;
+        height: 420px;
+        padding: 0.8rem;
+    }
+
+    section.HistoryTech .container .square .smallSqr {
+        width: 420px;
+        height: 330px;
+        padding: 0.8rem;
+    }
+    section.HistoryTech .container .square .smallSqr p {
+        font-size: .8rem;
+    }
+    section.HistoryTech .buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start;
+        gap: 1rem;
+    }
+    
+    section.HistoryTech .buttons button {
+        width: 130px;
+        height: 45px;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    section.HistoryTech .header {
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    section.HistoryTech .container .current {
+        height: 500px;
+    }
+}
+
+@media (max-width: 992px) {
+    section.HistoryTech .container .square {
+        width: 480px;
+        height: 420px;
+        padding: 0.8rem;
+    }
+
+    section.HistoryTech .container .square .smallSqr {
+        width: 370px;
+        height: 320px;
+        padding: 0.8rem;
+    }
+    section.HistoryTech .container .square .smallSqr p {
+        font-size: .76rem;
+    }
+    section.HistoryTech .buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start;
+        gap: 1rem;
+    }
+    
+    section.HistoryTech .buttons button {
+        width: 150px;
+        height: 45px;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    section.HistoryTech .header {
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    section.HistoryTech .container .current {
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    section.HistoryTech .container .square {
+        width: 480px;
+        height: 420px;
+        padding: 0.8rem;
+    }
+
+    section.HistoryTech .container .square .smallSqr {
+        width: 370px;
+        height: 320px;
+        padding: 0.8rem;
+    }
+    section.HistoryTech .container .square .smallSqr p {
+        font-size: .76rem;
+    }
+    section.HistoryTech .buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start;
+        gap: 1rem;
+    }
+    
+    section.HistoryTech .buttons button {
+        width: 150px;
+        height: 45px;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    section.HistoryTech .header {
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    section.HistoryTech .container .current {
+        height: 500px;
+    }
+}
+
+@media (max-width: 576px) {
+    section.HistoryTech .container .square {
+        width: 400px;
+        height: 420px;
+        padding: 0.8rem;
+    }
+
+    section.HistoryTech .container .square .smallSqr {
+        width: 300px;
+        height: 320px;
+        padding: 0.8rem;
+    }
+    section.HistoryTech .container .square .smallSqr p {
+        font-size: .7rem;
+    }
+    section.HistoryTech .buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start;
+        gap: 1rem;
+    }
+    
+    section.HistoryTech .buttons button {
+        width: 140px;
+        height: 45px;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    section.HistoryTech .header {
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    section.HistoryTech .container .current {
+        height: 500px;
+    }
+}

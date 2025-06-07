@@ -1,0 +1,325 @@
+/* *Code Structure *
+1)Book code
+2)Responsive
+*/
+
+/* ---------------
+1) Book code
+----------------- */
+section.Booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.Booking .header {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 197, 39, 1);
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Cairo-600';
+    margin-bottom: 4rem;
+}
+
+section.Booking .header .titleHeader {
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+section.Booking .header h5 {
+    margin-top: 0.6rem;
+}
+
+section.Booking .TechCard {
+    text-align: start;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+section.Booking .TechCard .Card2 {
+    background-color: rgba(241, 241, 241, 1);
+    width: 600px;
+    padding: 2rem;
+    border-radius: 26px;
+    box-shadow: 1px 1px 10px black;
+}
+
+section.Booking .TechCard .Card2 h6 {
+    font-family: 'Cairo-700';
+    text-align: center;
+}
+
+section.Booking .TechCard .Card2 p {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+section.Booking .TechCard .leftSec {
+    position: absolute;
+    text-align: center;
+    left: 3rem;
+    top: -2rem;
+}
+
+section.Booking .TechCard .leftSec .Prof img {
+    width: 170px;
+    height: 170px;
+    border-radius: 30px;
+}
+
+section.Booking .Reserve {
+    text-align: start;
+    width: 1000px;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 16px;
+    padding: 2rem;
+}
+
+section.Booking .Reserve .tit {
+    font-family: 'Cairo-700';
+    margin-bottom: 1rem;
+}
+
+section.Booking .Reserve .day,
+section.Booking .Reserve .time {
+    gap: 3rem;
+}
+
+section.Booking .Reserve .selections {
+    border: 1px solid gray;
+    border-radius: 16px;
+    padding: 0.67rem;
+    height: 80px;
+    text-align: center;
+    width: 110px;
+    transition: all 0.3s ease-in-out;
+}
+section.Booking .Reserve .ti {  
+    width: 150px;
+}
+
+section.Booking .Reserve .selections:first-child {
+    margin-right: 3rem;
+}
+
+section.Booking .Reserve .time .selections {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+section.Booking .Reserve .times .tit {
+    margin-top: 2rem;
+}
+
+.Booking .Reserve .selections.selected,
+.Booking .Reserve .selections.selected:hover {
+    background-color: #1a5a8a;
+    color: white;
+    border-color: white;
+}
+
+section.Booking button {
+    background-color: rgba(255, 197, 39, 1);
+    width: 400px;
+    text-align: center;
+    height: 43px;
+    margin: 3rem 0;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+section.Booking button:hover {
+    background-color: rgba(98, 94, 84, 0.511);
+}
+
+.popup-success {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  
+section.Booking .popup-content {
+    background-color: #1a5a8a;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 90%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    color: white;
+    font-weight: bold;
+    height: 590px;
+}
+
+section.Booking .Pend{
+    height: 285px;   
+    font-weight: bold;
+    background-color: #e9e9e9;
+    color: black;
+
+  }
+  
+
+section.Booking .popup-content button {
+    margin-top: 10px;
+    padding: 10px 10px;
+    background: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+ 
+section.Booking .popup-content.rejected h3 {
+    color: #c0392b;
+  }
+
+/* ---------------
+2) Responsive
+----------------- */
+
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+    section.Booking .TechCard .Card2 {
+        width: 600px;
+        max-width: 550px;
+    }
+
+    section.Booking .Reserve {
+        width: 90%;
+        max-width: 900px;
+    }
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 992px) {
+    section.Booking .TechCard .Card2 {
+        width: 600px;
+        max-width: 500px;
+    }
+    section.Booking .TechCard .leftSec .Prof img {
+        width: 60%;
+    }
+    section.Booking .Reserve {
+        width: 90%;
+        max-width: 800px;
+    }
+
+    section.Booking .Reserve .selections {
+        width: 90px;
+        height: 70px;
+    }
+
+    section.Booking .Reserve .selections:first-child {
+        margin-right: 2rem;
+    }
+
+    section.Booking .Reserve .day,
+    section.Booking .Reserve .time {
+        gap: 2rem;
+    }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    section.Booking .TechCard .Card2 {
+        width: 500px;
+        max-width: 450px;
+        padding: 1.5rem;
+    }
+    section.Booking .TechCard .leftSec .Prof img {
+        width: 60%;
+    }
+    section.Booking .TechCard .leftSec {
+        left: 2rem;
+        top: -1.5rem;
+    }
+
+    section.Booking .Reserve {
+        padding: 1.5rem;
+    }
+
+    section.Booking .Reserve .selections {
+        width: 90px;
+        height: 75px;
+        padding: 0.8rem;
+    }
+
+    section.Booking .Reserve .selections:first-child {
+        margin-right: 1.5rem;
+    }
+
+    section.Booking .Reserve .day,
+    section.Booking .Reserve .time {
+        gap: 1.5rem;
+    }
+
+    section.Booking button {
+        width: 90%;
+        max-width: 350px;
+    }
+}
+
+/* For screens smaller than 576px */
+@media (max-width: 576px) {
+    section.Booking .TechCard .Card2 {
+        width: 400px;
+        max-width: 400px;
+        padding: 1rem;
+    }
+
+    section.Booking .TechCard .leftSec {
+        left: 1rem;
+        top: -1rem;
+    }
+
+    section.Booking .TechCard .leftSec .Prof img {
+        width: 60%;
+    }
+
+    section.Booking .Reserve {
+        padding: 1rem;
+    }
+
+    section.Booking .Reserve .selections {
+        width: 75px;
+        height: 65px;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    section.Booking .Reserve .selections:first-child {
+        margin-right: 1rem;
+    }
+
+    section.Booking .Reserve .day,
+    section.Booking .Reserve .time {
+        gap: 1rem;
+    }
+
+    section.Booking button {
+        width: 90%;
+        max-width: 300px;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,202 @@
+/* *Code Structure *
+1)Comments code
+2)Responsive
+*/
+
+/* ---------------
+1) Comments code
+----------------- */
+section.Complaint {
+    background: linear-gradient(95deg, #FFC527 15%, #222222 50%, #FFC527 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.Complaint .container {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    margin: auto;
+    padding: 2rem 3rem;
+}
+
+section.Complaint .container .title {
+    align-items: center;
+    padding: 1rem;
+    font-family: 'Cairo-700';
+    margin-bottom: 1rem;
+}
+
+section.Complaint .container .title .iconn {
+    margin-left: .6rem;
+}
+
+section.Complaint .box {
+    text-align: start;
+}
+
+section.Complaint .box input,
+section.Complaint .box textarea {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 0.8rem;
+    border: 2px solid #ccc;
+    border-radius: 26px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+section.Complaint .box textarea {
+    min-height: 220px;
+}
+
+section.Complaint .container .box input {
+    margin-bottom: 1.8rem;
+}
+
+section.Complaint .container .box label {
+    position: absolute;
+    right: 5rem;
+    background-color: white;
+    font-size: 1rem;
+    font-family: 'Cairo-600';
+    color: rgb(90, 87, 87);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+section.Complaint .box input:focus,
+section.Complaint .box textarea:focus {
+    border-color: rgba(255, 197, 39, 1);
+}
+
+section.Complaint .container .box button {
+    background: linear-gradient(95deg, #222222 20%, #FFC527 100%);
+    width: 700px;
+    height: 45px;
+    border-radius: 50px;
+    margin-top: 2rem;
+    transition: all 0.3s ease-in-out;
+    margin-right: .5rem;
+    text-align: center;
+    color: #fff;
+}
+
+section.Complaint .container .box button:hover {
+    background-color: rgba(230, 177, 35, 1);
+}
+
+section.Complaint .container .comSec {
+    gap: 8rem;
+}
+
+section.Complaint .container .comSec .ImgComplaint {
+    width: 50%;
+    margin-top: 3rem;
+}
+
+section.Complaint .container .comSec .ImgComplaint img {
+    width: 100%;
+}
+
+/* ---------------
+2) Responsive
+----------------- */
+
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+    section.Complaint .container {
+        padding: 4rem 2rem;
+    }
+
+    section.Complaint .container .comSec {
+        gap: 8rem;
+    }
+
+    section.Complaint .container .comSec .ImgComplaint {
+        width: 40%;
+    }
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 992px) {
+    section.Complaint .container {
+        padding: 3rem 1.5rem;
+    }
+
+    section.Complaint .container .comSec .ImgComplaint {
+        display: none;
+    }
+
+    section.Complaint .container .box button {
+        margin-right: 0;
+    }
+
+    section.Complaint .container .box label {
+        right: 2rem;
+    }
+    section.Complaint .container .box button {
+        width: 600px;
+        margin-right: 1rem;
+    }
+    section.Complaint .box input,
+    section.Complaint .box textarea {
+    width:100%;
+    }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    section.Complaint .container {
+        padding: 2rem 1rem;
+    }
+
+    section.Complaint .container .comSec .ImgComplaint {
+        display: none;
+    }
+
+    section.Complaint .container .box button {
+        margin-right: 0;
+    }
+
+    section.Complaint .container .box label {
+        right: 2rem;
+    }
+    section.Complaint .container .box button {
+        width: 450px;
+        margin-right: 1rem;
+    }
+    section.Complaint .box input,
+    section.Complaint .box textarea {
+    width:100%;
+    }
+}
+
+/* For screens smaller than 576px */
+@media (max-width: 576px) {
+    section.Complaint .container {
+        padding: 1rem 0.5rem;
+    }
+    section.Complaint .container .comSec .ImgComplaint {
+        display: none;
+    }
+
+    section.Complaint .container .box button {
+        margin-right: 0;
+    }
+
+    section.Complaint .container .box label {
+        right: 2rem;
+    }
+    section.Complaint .container .box button {
+        width: 410px;
+        margin-right: 1rem;
+    }
+    section.Complaint .box input,
+    section.Complaint .box textarea {
+    width:95%;
+    }
+}

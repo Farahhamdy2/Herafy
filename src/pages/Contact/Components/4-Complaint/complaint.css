@@ -1,0 +1,156 @@
+/* *Code Structure *
+1)Complaint code
+2)Responsive
+*/
+
+/* ---------------
+1)Complaint code
+----------------- */
+.complaint .container {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.complaint .container p {
+    margin-right: 3rem;
+    margin-top: 1.3rem;
+    text-align: start;
+    margin-bottom: 2rem;
+}
+
+.complaint .title {
+    align-items: center;
+}
+
+.complaint .title h4 {
+    margin-right: 1rem;
+    font-family: 'Cairo-700';
+    font-size: 1.4rem;
+}
+
+.complaint .container .optionsSec .options {
+    justify-content: center;
+    gap: 20rem;
+}
+
+.complaint .container .optionsSec .options button {
+    text-align: start;
+    background-color: rgba(255, 197, 39, 1);
+    margin-bottom: 3rem;
+    border-radius: 26px;
+    padding: 0 1rem;
+    font-size: 1rem;
+    width: 270px;
+    height: 50px;
+    font-family: 'Cairo-600';
+    text-align: start;
+    transition: all 0.3s ease;
+}
+
+.complaint .container .optionsSec .options button:hover {
+    box-shadow: 3px 8px 7px rgb(62, 61, 61);
+}
+
+.complaint .container .optionsSec .options button h5{
+    font-size: 1.1rem;
+    font-family: 'Cairo-600';
+}
+
+.complaint .container .optionsSec .options .option .arr {
+    align-items: center;
+    text-align: start;
+    gap: 3rem;
+}
+.complaint .container .optionsSec .options .option .arr .tiit{
+    width: 190px;
+}
+
+/* ---------------
+2)Responsive
+----------------- */
+
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+    .complaint .container .optionsSec .options {
+        gap: 15rem; /* Reduce gap between options */
+    }
+
+    .complaint .container .optionsSec .options button {
+        width: 250px; /* Slightly reduce button width */
+    }
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 992px) {
+    .complaint .container {
+        width: 90%; 
+    }
+    .complaint .container .optionsSec .options {
+        gap: 2rem; 
+    }
+
+    .complaint .container .optionsSec .options button {
+        width: 300px; 
+        margin-bottom: 2rem; 
+    }
+
+    .complaint .container p {
+        margin-right: 1.6rem; /* Adjust paragraph margin */
+    }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    .complaint .container {
+        width: 95%; 
+    }
+
+    .complaint .container .optionsSec .options {
+        gap: 1rem; 
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .complaint .container .optionsSec .options button {
+        width: 250px; 
+        font-size: 0.9rem; 
+        padding: 0.5rem 1rem; 
+    }
+
+    .complaint .container p {
+        margin-right: 1.4rem; 
+        font-size: 0.9rem;
+    }
+
+    .complaint .title h4 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .complaint .container {
+        width: 100%; 
+        padding: 0 1rem; 
+    }
+
+    .complaint .container .optionsSec .options {
+        gap: 1rem; 
+    }
+
+    .complaint .container .optionsSec .options button {
+        width: 250px; 
+        font-size: 0.5rem; 
+        padding: 0.5rem 1rem; 
+    }
+
+    .complaint .container p {
+        margin-right: 1rem; 
+        font-size: 1rem; 
+    }
+
+    .complaint .title h4 {
+        font-size: 1.8rem; 
+    }
+}

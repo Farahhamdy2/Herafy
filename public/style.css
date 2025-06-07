@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?o5oho3');
+  src:  url('fonts/icomoon.eot?o5oho3#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?o5oho3') format('truetype'),
+    url('fonts/icomoon.woff?o5oho3') format('woff'),
+    url('fonts/icomoon.svg?o5oho3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak-as: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-calendar:before {
+  content: "\e901";
+}
+.icon-date:before {
+  content: "\e901";
+}
+.icon-schedule:before {
+  content: "\e901";
+}
+.icon-arrow_back_ios:before {
+  content: "\e900";
+}
+.icon-details:before {
+  content: "\e906";
+}
+.icon-status:before {
+  content: "\e907";
+}
+.icon-filter:before {
+  content: "\e904";
+}
+.icon-phone-call:before {
+  content: "\e902";
+}
+.icon-profile:before {
+  content: "\e905";
+}
+.icon-phone:before {
+  content: "\e908";
+}
+.icon-user:before {
+  content: "\f007";
+}
+.icon-close:before {
+  content: "\f00d";
+}
+.icon-time:before {
+  content: "\f017";
+}
+.icon-eye:before {
+  content: "\f06e";
+}
+.icon-eye-slash:before {
+  content: "\f070";
+}
+.icon-calendar1:before {
+  content: "\f073";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+.icon-linkedin:before {
+  content: "\f0e1";
+}
+.icon-instagram:before {
+  content: "\f16d";
+}
+.icon-location:before {
+  content: "\e903";
+}
+.icon-wallet:before {
+  content: "\e909";
+}
+.icon-tech:before {
+  content: "\e90a";
+}
+.icon-qrcode:before {
+  content: "\e938";
+}
+.icon-coin-dollar:before {
+  content: "\e93b";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}

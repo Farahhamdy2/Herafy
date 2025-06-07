@@ -1,0 +1,115 @@
+/* *Code Structure *
+1) Right Section
+2) Left Section
+3) Responsive
+*/
+
+/* ---------------
+1) Right Section
+----------------- */
+.RightSec .title {
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.RightSec .title h3 {
+    font-size: 1.4rem;
+    font-family: 'Cairo-700';
+    padding-top: 1rem;
+}
+.RightSec .title .image {
+    padding-left: 1rem;
+}
+.RightSec .pack {
+    gap: 1rem;
+    padding: 0 5rem;
+    margin-bottom: 3rem;
+}
+.RightSec .pack .text {
+    text-align: right;
+}
+.RightSec .pack .text h4{
+    font-size: 1.4rem;
+}
+/* .RightSec .pack .text p{
+    font-size: .9rem;
+} */
+
+/* ---------------
+2) Left Section
+----------------- */
+.LeftSec .aboutAnimation{
+    height : 355px;
+    width: 400px;
+    margin-top: 8rem;
+}
+
+/* ---------------
+3) Responsive
+----------------- */
+@media (max-width: 1200px) {
+    .RightSec .pack {
+        padding: 0 3rem; 
+    }
+    .LeftSec .imageLeft img {
+        width: 380px; 
+    }
+}
+
+@media (max-width: 992px) {
+    .RightSec .pack {
+        padding: 0 2rem;
+    }
+    .LeftSec .imageLeft img {
+        width: 340px; 
+    }
+    .LeftSec .imageLeft {
+        margin-top: 4rem; 
+    }
+}
+
+@media (max-width: 768px) {
+    .RightSec .pack {
+        padding: 0 1.5rem; 
+    }
+    .RightSec .title {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+    .RightSec .title .image {
+        padding-left: 0;
+        padding-top: 1rem; 
+    }
+    .LeftSec .imageLeft img {
+        width: 100%; 
+        max-width: 300px;
+    }
+    .LeftSec .imageLeft {
+        margin-top: 3rem; 
+    }
+    .container{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .RightSec .pack {
+        padding: 0 1rem; 
+    }
+    .RightSec .title h3 {
+        font-size: 1.2rem; 
+    }
+    .LeftSec .imageLeft img {
+        max-width: 250px; 
+    }
+    .LeftSec .imageLeft {
+        margin-top: 2rem; 
+    }
+    .container{
+        flex-direction: column;
+    }
+    .LeftSec .aboutAnimation{
+        height : 355px;
+        width: 400px;
+        margin-top: 1rem;
+    }
+}

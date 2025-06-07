@@ -1,0 +1,360 @@
+/* ---------------
+1) General Styles
+----------------- */
+
+/* Main section styling */
+section.Userlogin {
+    background: linear-gradient(95deg, #FFC527 15%, #222222 50%, #FFC527 100%);
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.Userlogin .container {
+    position: absolute;
+    background-color: white;
+    width:100%; 
+    margin: auto;
+    padding: 7rem 2rem; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+section.Userlogin .container .title {
+    text-align: start;
+    align-items: center;
+    padding: 1rem;
+    font-family: 'Cairo-700';
+    margin-bottom: 1rem;
+}
+
+section.Userlogin .box input,
+section.Userlogin .box textarea {
+    width: 98%; 
+    height: 45px;
+    padding: 10px 20px;
+    margin: 0.8rem;
+    border: 2px solid #ccc;
+    border-radius: 26px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease; 
+}
+input:-webkit-autofill {
+    box-shadow: 0 0 0 1000px white inset !important;
+    -webkit-text-fill-color: #000 !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+section.Userlogin .box input:focus,
+section.Userlogin.box textarea:focus {
+    border-color: rgba(255, 197, 39, 1); 
+}
+
+section.Userlogin .container .box label {
+    position: absolute;
+    right: 2rem; 
+    background-color: white;
+    font-size: .92rem;
+    font-family: 'Cairo-600';
+    color: rgb(90, 87, 87);
+    pointer-events: none; 
+    transition: all 0.3s ease;
+}
+
+section.Userlogin .container .box button {
+    background: linear-gradient(95deg, #222222 20%, #FFC527 100%);
+    width: 500px;
+    height: 45px;
+    border-radius: 50px;
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+    margin-right: 0.5rem;
+    text-align: center;
+    color: #fff;
+    border: none; 
+    cursor: pointer; 
+}
+
+section.Userlogin.container .box button:hover {
+    background-color: rgba(230, 177, 35, 1);
+}
+
+section.Userlogin .container .comSec {
+    gap: 11rem; 
+    justify-content: center;
+    align-items: center;
+}
+
+section.Userlogin .container .comSec p {
+    font-size: 0.7rem;
+    color: #7d7b7b;
+    margin-bottom: 0.9rem;
+}
+
+section.Userlogin .container .comSec .ImgComplaint {
+    width: 95%;
+    margin-left: 4rem;
+    margin-top: 13rem;
+}
+
+section.Userlogin .container .comSec .ImgComplaint img {
+    width: 100%; 
+}
+
+section.Userlogin .container .comSec .remind {
+    gap: 21rem; 
+}
+
+section.Userlogin .container .comSec .remind a {
+    font-size: 0.76rem;
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+
+section.Userlogin .container .comSec .remind a:hover {
+    color: #FFC527;
+}
+
+section.Userlogin .container .comSec .remind .check label {
+    font-size: 0.76rem;
+    margin-top: .4rem;
+    margin-right: 1.2rem;
+
+}
+
+section.Userlogin .container .comSec .remind .check input {
+    position: relative;
+    margin-right: 2rem;
+    bottom: 1.2rem;
+}
+
+section.Userlogin .container .parg{
+    margin-top: .8rem;
+    font-weight: bold;
+}
+section.Userlogin .container .parg a{
+    color: #FFC527;
+    margin-right: .3rem;
+    border-bottom: 1px solid #FFC527;
+}
+
+section.Userlogin  .password-wrapper {
+    position: relative;
+}
+
+section.Userlogin  .toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 29.5rem; 
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem; 
+    color: #888; 
+}
+section.Userlogin .passLabel{
+    position: relative;
+    z-index: 11;
+}
+
+
+/* ---------------
+2) Responsive Design
+----------------- */
+@media (max-width: 1200px) {
+    section.Userlogin  .container {
+        padding: 3rem 1.5rem;
+    }
+
+    section.Userlogin .container .comSec .ImgLogin {
+        display: none;
+    }
+
+    section.Userlogin .container .box button {
+        margin-right: 0;
+    }
+    section.Userlogin  .container .box label {
+        right: 17rem;
+    }
+    section.Userlogin  .container .box button {
+        width: 450px;
+        margin-right: 1rem;
+    }
+    section.Userlogin   .box input,
+    section.Userlogin  .box textarea {
+    width:100%;
+    }
+    section.Userlogin   .container .box .opts label{
+        bottom: 2.3rem;
+        right:4rem;
+    }
+    section.Userlogin  .toggle-icon {
+        right: 27.9rem;  
+    }
+    section.Userlogin .container .comSec .remind .check label {
+        margin-right: 1.2rem;
+
+    }
+    section.Userlogin .container .comSec .remind {
+        gap: 20.4rem; 
+    }
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 992px) {
+    section.Userlogin  .container {
+        padding: 3rem 1.5rem;
+    }
+
+    section.Userlogin .container .comSec .ImgLogin {
+        display: none;
+    }
+
+    section.Userlogin .container .box button {
+        margin-right: 0;
+    }
+    section.Userlogin  .container .box label {
+        right: 10rem;
+    }
+    section.Userlogin  .container .box button {
+        width: 450px;
+        margin-right: 1rem;
+    }
+    section.Userlogin   .box input,
+    section.Userlogin  .box textarea {
+    width:100%;
+    }
+    section.Userlogin   .container .box .opts label{
+        bottom: 2.3rem;
+        right:4rem;
+    }
+    section.Userlogin  .toggle-icon {
+        right: 27.9rem;  
+    }
+    section.Userlogin .container .comSec .remind .check label {
+        margin-right: .6rem;
+
+    }
+    section.Userlogin .container .comSec .remind {
+        gap: 20.4rem; 
+    }
+    
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    section.Userlogin  .container {
+        padding: 2rem 1rem;
+    }
+
+    section.Userlogin .container .comSec .ImgLogin {
+        display: none;
+    }
+
+    section.Userlogin  .container .box button {
+        margin-right: 0;
+    }
+
+    section.Userlogin  .container .box label {
+        right: 3.8rem;
+    }
+    section.Userlogin  .container .box button {
+        width: 450px;
+        margin-right: 1rem;
+    }
+    section.Userlogin   .box input,
+    section.Userlogin  .box textarea {
+    width:100%;
+    }
+    section.Userlogin   .container .box .opts label{
+        bottom: 2.3rem;
+        right:4rem;
+    }
+    section.Userlogin  .toggle-icon {
+        right: 27.9rem;  
+    }
+    section.Userlogin .container .comSec .remind .check label {
+        margin-right: 1.2rem;
+
+    }
+    section.Userlogin .container .comSec .remind {
+        gap: 20.4rem; 
+    }
+}
+
+/* For screens smaller than 576px */
+@media (max-width: 576px) {
+    section.Userlogin  .container {
+        padding: 4rem 0.5rem;
+    }
+    section.Userlogin  .container .ImgLogin {
+        display: none;
+    }
+
+    section.Userlogin  .container .box button {
+        margin-right: 0;
+    }
+
+    section.Userlogin  .container .box label {
+        right: 4rem;
+    }
+    section.Userlogin  .container .box button {
+        width: 410px;
+        margin-right: 1rem;
+    }
+    section.Userlogin  .box input,
+    section.Userlogin   .box textarea {
+    width:95%;
+    }
+    section.Userlogin   .container .box .opts label{
+        bottom: 2.3rem;
+        right:4rem;
+    }
+    section.Userlogin  .toggle-icon {
+        right: 23.5rem;  
+    }
+    section.Userlogin .container .comSec .remind .check label {
+        margin-right: 1.4rem;
+
+    }
+    section.Userlogin .container .comSec .remind {
+        gap: 16rem; 
+    }
+}
+@media (max-width: 470px) {
+    section.Userlogin  .container {
+        padding: 4rem 0.5rem;
+    }
+    section.Userlogin  .container .ImgLogin {
+        display: none;
+    }
+
+    section.Userlogin  .container .box button {
+        margin-right: 0;
+    }
+
+    section.Userlogin  .container .box label {
+        right: 2rem;
+    }
+    section.Userlogin  .container .box button {
+        width: 410px;
+        margin-right: 1rem;
+    }
+    section.Userlogin  .box input,
+    section.Userlogin   .box textarea {
+    width:95%;
+    }
+    section.Userlogin   .container .box .opts label{
+        bottom: 2.3rem;
+        right:4rem;
+    }
+    section.Userlogin  .toggle-icon {
+        right: 23.5rem;  
+    }
+    section.Userlogin .container .comSec .remind .check label {
+        margin-right: 1.4rem;
+
+    }
+    section.Userlogin .container .comSec .remind {
+        gap: 16rem; 
+    }
+}
