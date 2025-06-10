@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Cairo';
+    src: url('/fontstext/Cairo/Cairo-VariableFont_slnt,wght.ttf');
+    font-weight: 400;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Cairo';
+}
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    all: unset;
+}

@@ -1,0 +1,276 @@
+/* *Code Structure *
+1)Fonts
+2)intro code
+3)UserOrTech
+4)responsive
+*/
+
+/* ---------------
+1) Fonts
+----------------- */
+@font-face {
+    font-family: 'Cairo-700';
+    src: url('/public/fontstext/Cairo/Cairo-VariableFont_slnt\,wght.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Cairo-600';
+    src: url('/public/fontstext/Cairo/Cairo-VariableFont_slnt\,wght.ttf');
+    font-weight: 600;
+}
+
+/* ---------------
+2) Intro Code
+----------------- */
+.Intro {
+    position: relative;
+}
+
+.Intro .bg-video,
+.Intro .overlay {
+    width: 100%;
+    height: 100vh;
+}
+.Intro .bg-video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.Intro .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(30, 25, 25, 0.77);
+    z-index: 11;
+}
+
+.Intro .TextonVideo {
+    color: white;
+    position: absolute;
+    bottom: 19rem;
+    right: 3rem;
+    z-index: 11;
+}
+
+.Intro .TextonVideo h1 {
+    font-size: 4rem;
+    font-family: 'Cairo-700';
+}
+
+.Intro .TextonVideo p {
+    font-size: 2rem;
+    word-spacing: 0.2rem;
+}
+
+.Intro .buttons {
+    position: absolute;
+    bottom: 7rem;
+    right: 3rem;
+    gap: 1rem;
+    z-index: 11;
+}
+
+.Intro .buttons button {
+    padding: 0.2rem 2rem;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Cairo-700';
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.Intro .buttons .login {
+    color: white;
+    background-color: rgba(255, 197, 39, 1);
+    padding: 1rem 3rem;
+}
+
+.Intro .buttons .signup {
+    color: black;
+    background-color: white;
+}
+
+
+/* ---------------
+3)UserOrTech
+----------------- */
+.Intro .bgUserTech {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;  
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 230; 
+  }
+  .Intro .UserOrTechLog,.Intro .UserOrTechReg {
+    position: relative; 
+    z-index: 234;
+    color: black;
+    background-color: white;
+    width: 350px;
+    height: 230px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  }
+
+.Intro .UserOrTechLog .titlee h6,.Intro .UserOrTechReg .titlee h6{
+    font-family: 'Cairo-700';
+}
+
+.Intro .UserOrTechLog button,.Intro .UserOrTechReg button{
+    background-color: rgba(255, 197, 39, 1);
+    width: 250px;
+    height:40px;
+    border-radius: 26px;
+    text-align: center;
+    font-size: .9rem;
+    color: white;
+    font-family: 'Cairo-700';
+}
+
+
+/* ---------------
+4) Responsive
+----------------- */
+@media (max-width: 1200px) {
+    .Intro .TextonVideo {
+        bottom: 15rem; 
+        right: 2rem;
+    }
+    .Intro .TextonVideo h1 {
+        font-size: 3.5rem; 
+    }
+    .Intro .TextonVideo p {
+        font-size: 1.8rem; 
+    }
+    .Intro .buttons {
+        bottom: 5rem; 
+        right: 2rem;
+    }
+    .Intro .buttons button {
+        font-size: 1rem;
+    }
+    .Intro .bg-video,
+    .Intro .overlay {
+        height: 90vh; 
+    }
+} .Intro .UserOrTechLog,.Intro .UserOrTechReg{
+    background-color: rgb(245, 245, 245);
+    right: 0rem;
+}
+
+@media (max-width: 992px) {
+    .Intro .TextonVideo {
+        bottom: 12rem; 
+        right: 1.5rem;
+    }
+    .Intro .TextonVideo h1 {
+        font-size: 3rem;
+    }
+    .Intro .TextonVideo p {
+        font-size: 1.5rem;
+    }
+    .Intro .buttons {
+        bottom: 4rem; 
+        right: 1.5rem;
+    }
+    .Intro .buttons button {
+        font-size: 1rem;
+    }
+    .Intro .UserOrTechLog,.Intro .UserOrTechReg{
+        background-color: rgb(245, 245, 245);
+        right: 0rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Intro .TextonVideo {
+        display: none;
+    }
+   
+    .Intro .buttons {
+        display: none;
+    }
+    .Intro .bg-video,
+    .Intro .overlay {
+        height: 53vh; 
+    }
+    .Intro .buttons {
+        bottom: 2rem; 
+        right: 0.5rem;
+        flex-direction: row;
+        display: block;
+    }
+    .Intro .buttons button:first-child {
+        padding: .4rem 3rem;
+    }
+    .Intro .buttons button:last-child {
+        padding: .3rem 3rem;
+    }
+    .Intro .buttons button {
+        text-align: center;
+        margin-right: 4rem;
+        font-size: .8rem;
+        width: 110px;
+        height: 38px;
+    }
+    .Intro .UserOrTechLog,.Intro .UserOrTechReg{
+        background-color: rgb(245, 245, 245);
+        right: 0rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .Intro .TextonVideo h1 {
+        display: none;
+    }
+    .Intro .TextonVideo p {
+        display: none;
+    }
+    .Intro .buttons {
+        bottom: 2rem; 
+        right: 0.5rem;
+        flex-direction: row;
+        display: block;
+    }
+    .Intro .buttons button:first-child {
+        padding: .4rem 3rem;
+    }
+    .Intro .buttons button:last-child {
+        padding: .3rem 3rem;
+    }
+    .Intro .buttons button {
+        text-align: center;
+        margin-right: 1.4rem;
+        font-size: .75rem;
+        width:105px;
+        height: 38px;
+    }
+    .Intro .UserOrTechLog,.Intro .UserOrTechReg{
+        background-color: rgb(245, 245, 245);
+        right: 0rem;
+    }
+    .Intro .bg-video,
+    .Intro .overlay {
+        height: 39vh; 
+    }
+    @media (max-width: 470px) {
+        .Intro .buttons button {
+            text-align: center;
+            margin-right: .7rem;
+            font-size: .75rem;
+            width:92px;
+            height: 38px;
+        }
+    }
+}

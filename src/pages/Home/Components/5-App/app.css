@@ -1,0 +1,166 @@
+/* *Code Structure *
+1) Fonts
+2) App Section
+3) Wave
+4) Responsive
+*/
+
+/* ---------------
+1) Fonts
+----------------- */
+@font-face {
+    font-family: 'Cairo-600';
+    src: url('/public/fontstext/Cairo/Cairo-VariableFont_slnt\,wght.ttf');
+    font-weight: 600;
+}
+
+/* ---------------
+2) App Section
+----------------- */
+section.app {
+    background-color: rgba(34, 34, 34, 1);
+}
+
+section.app .sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+section.app .text {
+    color: rgba(255, 197, 39, 1);
+    max-width: 600px; 
+    text-align: left;
+}
+
+section.app .text h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+section.app .text .buttons {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap; 
+}
+
+section.app .text .buttons button {
+    background-color: white;
+    color: black;
+    font-family: 'Cairo-700';
+    padding: 0.6rem 1.3rem;
+    border-radius: 6px;
+    transition: all 0.3s;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+section.app .text .buttons button:hover {
+    background-color: rgba(206, 203, 203, 0.8);
+    color: black;
+}
+
+section.app .text .buttons span {
+    padding-right: 0.3rem;
+}
+
+/* ---------------
+3) Wave
+----------------- */
+.wave-div {
+    position: relative;
+    background-color: #fff;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.wave-svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+/* ---------------
+4) Responsive Design
+----------------- */
+
+@media screen and (max-width: 1024px) {
+    section.app .sec {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section.app .text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    section.app .text .buttons {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section.app {
+        padding: 1.5rem;
+    }
+
+    section.app .text h3 {
+        font-size: 1.8rem;
+    }
+
+    section.app .text .buttons {
+        gap: 1rem;
+    }
+
+    section.app .text .buttons button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .wave-svg {
+        height: 70px; 
+    }
+}
+
+@media screen and (min-width: 480px) {
+    section.app .text h3 {
+        font-size: 1.5rem;
+    }
+
+    section.app .text .buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    section.app .text .buttons button {
+        width: 100%; 
+        text-align: center;
+    }
+    .appImg img{
+        width: 100%;
+    }
+    
+}
+@media (max-width: 470px) {
+    section.app .text h3 {
+        font-size: 1.5rem;
+    }
+
+    section.app .text .buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    section.app .text .buttons button {
+        width: 100%; 
+        text-align: center;
+    }
+    .appImg img{
+        width: 100%;
+    }
+}

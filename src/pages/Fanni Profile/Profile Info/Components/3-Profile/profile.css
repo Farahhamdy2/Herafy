@@ -1,0 +1,224 @@
+/* *Code Structure *
+1)Profile code
+2)Responsive
+*/
+
+/* ---------------
+1) Profile code
+----------------- */
+section.TechProfile .header {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 197, 39, 1);
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Cairo-600';
+}
+
+section.TechProfile .container .change {
+    justify-content: center;
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8rem;
+}
+
+section.TechProfile .header .titleHeader {
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+}
+
+section.TechProfile .header .titleHeader span {
+    margin-bottom: .3rem;
+}
+
+section.TechProfile .container {
+    text-align: center;
+}
+
+section.TechProfile .container .change p {
+    margin-left: 2.8rem;
+    margin-top: 1rem;
+    font-family: 'Cairo-600';
+}
+
+section.TechProfile .container .inps {
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+section.TechProfile .container .input-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+section.TechProfile .container input {
+    border-radius: 12px;
+    width: 450px;
+    height: 40px;
+    border: .5px solid rgba(58, 60, 62, 1);
+    margin-bottom: 4rem;
+    padding: 10px;
+    padding-top: 1rem;
+}
+
+section.TechProfile .container label {
+    position: absolute;
+    top: -12px;
+    right: 11px;
+    background-color: white;
+    padding: 0 5px;
+    font-size: .9rem;
+    color: rgba(56, 55, 55, 1);
+}
+
+section.TechProfile .container input:focus {
+    border-color: rgba(255, 197, 39, 1);
+}
+
+section.TechProfile .has-value {
+    font-size: 0.9rem;
+    color: rgb(86, 84, 84);
+}
+
+section.TechProfile .container button {
+    background-color: rgba(255, 197, 39, 1);
+    width: 360px;
+    height: 38px;
+    margin-bottom: 3rem;
+    border-radius: 13px;
+    margin-top: 3rem;
+}
+
+section.TechProfile .container .ProfileImage img{
+    width: 160px;
+    height: 200px;
+    border-radius: 40%;
+}
+
+section.TechProfile  .phoneNumb input{
+  text-align: right;
+}
+.ProfileImage{
+    margin-bottom: 2rem;
+}
+/* ---------------
+2)Responsive
+----------------- */
+@media (max-width: 1200px) {
+    section.TechProfile .container .change {
+        margin-left: 6rem;
+    }
+
+    section.TechProfile .container input {
+        width: 400px;
+    }
+
+    section.TechProfile .container button {
+        width: 320px;
+    }
+
+    section.TechProfile .container .ProfileImage {
+        width: 16%;
+    }
+}
+
+@media (max-width: 992px) {
+    section.TechProfile .header{
+        margin-top: 3rem;
+    }
+    section.TechProfile .container .change {
+        align-items: center;
+        margin-left: 0;
+    }
+    section.TechProfile .container .change p {
+        margin-left: .4rem;
+        margin-bottom: 2rem;
+    }
+
+    section.TechProfile .container input {
+        width: 450px;
+        margin-bottom: 2.4rem;
+    }
+
+    section.TechProfile .container button {
+        width: 240px;
+    }
+
+    section.TechProfile .container .ProfileImage {
+        width: 25%;
+    }
+    section.TechProfile .container .inps {
+        flex-direction: column;
+        gap: 0rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section.TechProfile .header{
+        margin-top: 3rem;
+    }
+    section.TechProfile .container .change {
+        align-items: center;
+        margin-left: 0;
+    }
+    section.TechProfile .container .change p {
+        margin-left: .4rem;
+        margin-bottom: 2rem;
+    }
+
+    section.TechProfile .container input {
+        width: 350px;
+        margin-bottom: 2.4rem;
+    }
+
+    section.TechProfile .container button {
+        width: 240px;
+    }
+
+    section.TechProfile .container .ProfileImage {
+        width: 25%;
+    }
+    section.TechProfile .container .inps {
+        flex-direction: column;
+        gap: 0rem;
+    }
+}
+
+@media (max-width: 576px) {
+    section.TechProfile .header{
+        margin-top: 3rem;
+    }
+    section.TechProfile .container .change {
+        align-items: center;
+        margin-left: 0;
+    }
+    section.TechProfile .container .change p {
+        margin-left: .4rem;
+        margin-bottom: 2rem;
+    }
+
+    section.TechProfile .container input {
+        width: 290px;
+        margin-bottom: 2.4rem;
+    }
+
+    section.TechProfile .container button {
+        width: 200px;
+    }
+
+    section.TechProfile .container .ProfileImage {
+        width: 25%;
+    }
+    section.TechProfile .container .inps {
+        flex-direction: column;
+        gap: 0rem;
+    }
+}

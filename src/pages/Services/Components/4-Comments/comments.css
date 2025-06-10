@@ -1,0 +1,238 @@
+/* *Code Structure *
+1)Comments code
+2)Responsive
+*/
+
+
+/* ---------------
+1) Comments code
+----------------- */
+section.comment {
+    background-color: rgba(255, 197, 39, 1);
+    margin-top: 4rem;
+    font-family: 'Cairo';
+    padding: 4rem 0;
+  }
+  
+  section.comment .container {
+    text-align: start;
+    width: 80%;
+    margin: auto;
+  }
+  
+  section.comment .title {
+    gap: 27rem;
+  }
+  
+  section.comment .title .tit h6 {
+    margin-bottom: 1.2rem;
+  }
+  
+  section.comment .title .text {
+    border-right: 1px solid black;
+    padding-right: 2rem;
+    height: 7rem;
+  }
+  
+  /* Carousel Styling */
+  section.comment .slide {
+    margin-top: 4rem;
+  }
+  
+  section.comment .slide .out {
+    position: relative;
+    padding: 3rem 0;
+  }
+  
+  section.comment .slide .card {
+    border: none;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 220px;
+    margin-bottom: 10px;
+    width: 100%; 
+  }
+  
+  section.comment .slide .card h3 {
+    font-size: 1.3rem;
+    font-family: 'Cairo-600';
+    margin-bottom: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  section.comment .slide .card p {
+    font-size: 1rem;
+  }
+  
+  section.comment .slide .card .UserImg {
+    background-color: rgba(217, 217, 217, 1);
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -2.4rem;
+    box-shadow: 1px 1px 6px rgb(82, 81, 81);
+  }
+  
+  section.comment .slide .card .comma {
+    background-color: rgba(56, 55, 55, 1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -2.1rem;
+  }
+
+.comment .carousel-indicators button {
+    width: 8px;
+    height:8px;
+    border-radius: 50px;
+    background-color: #ddd !important;
+    transition: background-color 0.3s ease;
+    border: 1px solid rgb(82, 80, 80);
+  }
+.comment .carousel-indicators .active {
+    background-color: #fff;
+  }
+  
+.carousel-indicators {
+    bottom: -63px;  
+  }
+  .stars {
+    direction: ltr;
+    unicode-bidi: bidi-override;
+    margin: 10px 0;
+  }
+  
+  .star {
+    font-size: 1.5rem;
+    color: #ddd;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .star.full {
+    color: #ffc107;
+  }
+
+/* ---------------
+2)Responsive
+----------------- */
+@media (max-width: 1200px) {
+    section.comment .title {
+        gap: 20rem;
+    }
+
+    section.comment .container {
+        width: 85%;
+    }
+
+    section.comment .slide .card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    section.comment .title {
+        gap: 15rem;
+    }
+
+    section.comment .container {
+        width: 90%;
+    }
+
+    section.comment .slide .card {
+        padding: 1rem;
+    }
+
+    section.comment .slide .card h3 {
+        font-size: 1.2rem;
+    }
+
+    section.comment .slide .card p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section.comment .title {
+        gap: 10rem;
+    }
+
+    section.comment .container {
+        width: 95%;
+    }
+
+    section.comment .slide .card {
+        padding: 0.8rem;
+    }
+
+    section.comment .slide .card h3 {
+        font-size: 1.1rem;
+    }
+
+    section.comment .slide .card p {
+        font-size: 0.8rem;
+    }
+
+    section.comment .slide .card .UserImg {
+        width: 60px;
+        height: 60px;
+        bottom: -2rem;
+    }
+
+    section.comment .slide .card .comma {
+        width: 50px;
+        height: 50px;
+        top: -1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    section.comment .title {
+        gap: 5rem;
+    }
+
+    section.comment .container {
+        width: 100%;
+    }
+
+    section.comment .slide .card {
+        padding: 0.5rem;
+    }
+
+    section.comment .slide .card h3 {
+        font-size: 1.1rem;
+    }
+
+    section.comment .slide .card p {
+        font-size: 0.83rem;
+    }
+
+    section.comment .slide .card .UserImg {
+        width: 58px;
+        height: 58px;
+        bottom: -1.5rem;
+    }
+
+    section.comment .slide .card .comma {
+        width: 44px;
+        height: 44px;
+        top: -1.5rem;
+    }
+
+    .carousel-indicators {
+        bottom: -50px;
+    }
+}

@@ -1,0 +1,117 @@
+/* *Code Structure *
+1)Fonts
+2)why sec
+3)responsive
+*/
+
+/* ---------------
+1) Fonts
+----------------- */
+@font-face {
+    font-family: 'Cairo-600';
+    src: url('/public/fontstext/Cairo/Cairo-VariableFont_slnt\,wght.ttf');
+    font-weight: 600; 
+}
+
+
+/* ---------------
+2)why sec
+----------------- */
+section .WHY {
+    margin-bottom: 4.5rem;
+}
+
+section .why {
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    gap: 20rem;
+}
+
+section .why .title h3 span {
+    color: rgba(255, 197, 39, 1);
+}
+
+section .WHY .pack {
+    gap: 4rem;
+    width: 85%;
+    margin: auto;
+    background-color: rgba(245, 243, 243, 1);
+    padding: 3.3rem 4rem;
+    border-radius: 30px;
+}
+
+section .WHY .pack .card {
+    border: none;
+    text-align: center;
+    background-color: transparent;
+}
+
+section .WHY .pack .card h4 {
+    font-family: 'Cairo-600';
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+
+section .WHY .pack .card p {
+    line-height: 1.5rem;
+    font-size: .9rem;
+}
+
+/* ---------------
+3)responsive
+----------------- */
+@media (max-width: 1024px) {
+    section .why {
+        gap: 4rem;
+    }
+
+    section .WHY .pack {
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    section .WHY .pack .card {
+        flex: 1 1 calc(50% - 2rem); 
+        max-width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 768px) {
+    section .why {
+        gap: 3rem;
+    }
+
+     section .WHY .pack {
+        gap: 1rem; 
+        padding: 1rem; 
+        flex-direction: column; 
+    }
+
+    section .WHY .pack .card {
+        flex: 1 1 100%;
+        max-width: 100%; 
+    }
+}
+
+@media (max-width: 576px) {    
+    section .why {
+        gap: 2rem; 
+    }
+
+    section .WHY .pack {
+        gap: 1rem; 
+        padding: 1rem; 
+        flex-direction: column; 
+    }
+
+    section .WHY .pack .card {
+        flex: 1 1 100%;
+        max-width: 100%; 
+    }
+}
+@media (max-width: 470px) {
+    section .why {
+        gap: 0rem; 
+    }
+}

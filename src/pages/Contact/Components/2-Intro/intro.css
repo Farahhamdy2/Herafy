@@ -1,0 +1,82 @@
+/* *Code Structure *
+1)intro code
+2)responsive
+*/
+
+/* ---------------
+1) Intro Code
+----------------- */
+.Intro {
+    position: relative;
+}
+
+.Intro .bg-image{
+    width: 100%;
+    height: 60vh;
+}
+
+.Intro .overlay3{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(30, 25, 25, 0.77);
+    z-index: 11;
+    width: 100%;
+    height:55.8vh;
+}
+
+.Intro .TextonVideo {
+    color: white;
+    position: absolute;
+    bottom: 11rem;
+    right: 3rem;
+    z-index: 11;
+}
+
+.Intro .TextonVideo h1 {
+    font-size: 4rem;
+    font-family: 'Cairo-700';
+}
+
+.Intro .TextonVideo p {
+    font-size: 2rem;
+    word-spacing: 0.2rem;
+}
+
+/* ---------------
+2) Responsive
+----------------- */
+@media (max-width: 768px) {
+    .IntAbout .TextonVideo{
+        bottom: 10rem; 
+        right: 1rem;
+        display: block;
+        text-align: start;
+    }
+    .Intro .TextonVideo h1 {
+        font-size: 2.8rem;
+    }
+    .Intro .TextonVideo p {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 576px) {
+    .IntAbout .TextonVideo{
+        bottom: 10rem; 
+        right: 1rem;
+        text-align: center;
+        text-align: start;
+    }
+    .Intro .TextonVideo h1 {
+        font-size: 2.8rem;
+        display: block;
+    }
+    .Intro .TextonVideo p {
+        font-size: 1.2rem;
+        display: block;
+    }
+}
+@media (max-width: 470px) {
+    .IntAbout .TextonVideo{
+        top: 8.5rem; 
+    }
+}

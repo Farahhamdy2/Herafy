@@ -1,0 +1,102 @@
+/* *Code Structure *
+1) Code Section
+2) Responsive
+*/
+
+/* ---------------
+1) Code Section
+----------------- */
+section.footer {
+    background-color: rgba(34, 34, 34, 1);
+    color: rgba(255, 255, 255, 1);
+    padding-top: 4.3rem;
+}
+section.footer a {
+    color: white;
+}
+section.footer .foot {
+    justify-content: center;
+    gap: 10rem;
+    margin-bottom: 3rem;
+}
+section.footer .foot .herafy .tit {
+    align-items: center;
+    margin-bottom: .6rem;
+}
+section.footer .foot .herafy .tit h3 {
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+section.footer .foot ul li {
+    margin-bottom: 1rem;
+}
+section.footer .foot ul li:first-child {
+    color: rgba(255, 197, 39, 1);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s;
+}
+section.footer .foot ul li a:hover {
+    color: rgba(255, 197, 39, 1);
+}
+section.footer .end {
+    justify-content: space-between;
+    padding: 0 4rem;
+    font-size: .7rem;
+}
+
+/* ---------------
+2) Responsive
+----------------- */
+@media (max-width: 1200px) {
+    section.footer .foot {
+        gap: 6rem; /
+    }
+}
+
+@media (max-width: 992px) {
+    section.footer .foot {
+        gap: 4rem; 
+        flex-wrap: wrap;
+    }
+    section.footer .foot .herafy {
+        flex-basis: 45%; 
+    }
+    section.footer .end {
+        padding: 0 2rem; 
+    }
+}
+
+@media (max-width: 768px) {
+    section.footer .foot {
+        gap: 2rem; 
+    }
+    section.footer .foot .herafy {
+        flex-basis: 100%; 
+        text-align: center; 
+    }
+    section.footer .foot .herafy .tit {
+        justify-content: center; 
+    }
+    section.footer .end {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 1rem; 
+        padding: 0 1rem; 
+    }
+}
+
+@media (max-width: 576px) {
+    section.footer .foot {
+        gap: 1rem; 
+    }
+    section.footer .foot .info{
+        padding-right: 3.3rem;
+    }
+    section.footer .foot ul li:first-child {
+        font-size: 1rem;
+    }
+    section.footer .end {
+        font-size: 0.6rem; 
+    }
+}

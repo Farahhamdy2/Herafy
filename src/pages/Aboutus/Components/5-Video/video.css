@@ -1,0 +1,233 @@
+/* *Code Structure *
+1)Video code
+2)responsive
+*/
+/* ---------------
+1)Video code
+----------------- */
+section.vIdeo {
+    margin-bottom: 8rem 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-bottom: 3rem;
+}
+
+section.vIdeo .vid {
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+section.vIdeo video,
+section.vIdeo .overlay2 {
+    height: 80vh;
+}
+
+section.vIdeo .aboutVideo video {
+    border-radius: 40px;
+    width:auto;
+    object-fit: cover;
+}
+
+section.vIdeo .overlay2 {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(37, 37, 197, 0.72);
+    z-index: 11;
+    width: 100%;
+    border-radius: 40px;
+}
+
+section.vIdeo .title h3 {
+    font-family: 'Cairo-700';
+    margin: 0.7em 0;
+}
+
+section.vIdeo .title p {
+    line-height: 2.3rem;
+}
+
+section.vIdeo .play {
+    background-color: rgba(255, 197, 39, 1);
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    position: absolute;
+    text-align: center;
+    right: 33rem;
+    bottom: 18rem;
+    z-index: 111;
+}
+
+section.vIdeo .play p {
+    padding-top: 1rem;
+}
+
+section.vIdeo .section2 {
+    margin-top: 2.3rem;
+}
+
+section.vIdeo .section2 .card {
+    border: none;
+    padding: 0 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+section.vIdeo .section2 .one {
+    margin-top: 1.2rem;
+}
+
+section.vIdeo .section2 .card .text h5 {
+    margin: 1rem 0;
+    font-family: 'Cairo-600';
+}
+
+section.vIdeo .section2 .card .text p {
+    padding: 0 1.6rem;
+}
+
+section.vIdeo .section2 .card .iconImg {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: rgba(217, 217, 217, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.vIdeo .section2 .card .iconImg img {
+    max-width: 60%;
+    max-height: 60%;
+}
+
+/* ---------------
+2) Responsive Code
+----------------- */
+@media (max-width: 1024px) {
+    section.vIdeo .aboutVideo video {
+        border-radius: 40px;
+        width: 100%;
+        height: 55.1vh;
+    }
+    section.vIdeo video,
+    section.vIdeo .overlay2 {
+        height: 55vh; 
+    }
+
+    section.vIdeo .play {
+        right: 18rem; 
+        bottom: 9rem;
+    }
+
+    section.vIdeo .section2 .card {
+        padding: 0 1rem; 
+    }
+
+    section.vIdeo .section2 .card .text p {
+        padding: 0 1rem; 
+    }
+}
+
+@media (max-width: 768px) {
+    section.vIdeo .aboutVideo video {
+        border-radius: 40px;
+        width: 100%;
+        height: 49vh;
+    }
+    section.vIdeo video,
+    section.vIdeo .overlay2 {
+        height: 49vh; 
+    }
+
+    section.vIdeo .play {
+        right: 13.3rem; 
+        bottom: 8rem;
+        width: 70px; 
+        height: 70px;
+    }
+
+    section.vIdeo .play p {
+        padding-top: 0.5rem; 
+    }
+    section.vIdeo .section2 .cards2 {
+        display: flex;
+        flex-direction: column; 
+    }
+    section.vIdeo .section2 .card {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    section.vIdeo .section2 .card .iconImg {
+        margin-bottom: 1rem; 
+    }
+}
+
+@media (max-width: 576px) {
+    section.vIdeo .aboutVideo video {
+        border-radius: 40px;
+        width: 100%;
+        height: 42vh;
+    }
+
+    section.vIdeo video,
+    section.vIdeo .overlay2 {
+        height: 42vh; 
+    }
+
+    section.vIdeo .play {
+        right: 11.3rem; 
+        bottom: 8rem;
+        width: 50px; 
+        height: 50px;
+    }
+
+    section.vIdeo .play p {
+        font-size: 0.8rem; 
+        padding-top: 0.89rem;
+    }
+
+    section.vIdeo .title h3 {
+        font-size: 1.5rem;
+    }
+
+    section.vIdeo .title p {
+        font-size: 0.9rem; 
+        line-height: 1.5rem;
+    }
+
+    section.vIdeo .section2 .cards2 {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    section.vIdeo .section2 .card {
+        width: 100%; 
+        padding: 1rem; 
+    }
+
+    section.vIdeo .section2 .card .text h5 {
+        font-size: 1rem;
+    }
+
+    section.vIdeo .section2 .card .text p {
+        font-size: 0.8rem; 
+    }
+
+    section.vIdeo .section2 .card .iconImg {
+        width: 60px; 
+        height: 60px;
+    }
+}
+@media (max-width: 470px) {
+    section.vIdeo .play {
+        right: 9.4rem; 
+        bottom: 5.8rem;
+        width: 50px; 
+        height: 50px;
+    }
+}

@@ -1,0 +1,218 @@
+/* *Code Structure *
+1)nav
+2)modal
+3)responsive
+*/
+
+/* ---------------
+1)nav
+ -----------------*/
+.head .logo img{
+    width: 3rem;
+    height: 3rem;
+}
+.flex{
+    display: flex;
+}
+ul{
+    gap: 5rem;
+}
+.head{
+    justify-content:space-between;
+    position: absolute;
+    top: 2.1rem;
+    right: 2rem;
+    left: 4rem;
+    z-index: 111;
+}
+.icon-user{
+    color: white;
+    font-size: 1.5rem;
+    margin-top:0rem;
+}
+.icon-close{
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.icon-close:hover{
+    color: rgba(255, 197, 39, 1);    
+    font-size: 1.6rem;
+    rotate: 180deg;
+}
+.head nav ul li {
+    margin-top: 1rem;
+}
+.head nav ul li a{
+    transition: all 0.4s;
+    color: white;
+}
+.head nav ul li a:hover{
+    color: rgba(255, 197, 39, 1);
+}
+.head nav ul .activee a{
+    color: rgba(255, 197, 39, 1);
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+.welcome-text {
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .logout-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .logout-btn:hover {
+    background-color: rgba(255, 197, 39, 1);
+    color: black;
+    border-color: rgba(255, 197, 39, 1);
+  }
+  .account-btn{
+    color: white;
+  }
+  
+  
+/* ---------------
+2)modal
+ -----------------*/
+ .head .fixedd{
+    position: fixed;
+    inset: 0;
+    z-index: 222;
+    background-color: rgba(40, 40, 48, 0.91) ;
+
+ }
+@keyframes close {
+    0% {scale:0;}
+    60% {scale:1.2;}
+    100% {scale: 1;}
+}
+
+ .head .fixedd ul.modall{
+    animation: close .77s 1;
+    width: 85%;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: rgba(34, 34, 34, 1);
+ }
+ .head .fixedd ul.modall li{
+    border-bottom: 1px solid rgba(63, 63, 70, 0.4) ;
+    padding-bottom: 0.77rem;
+    padding-top: 0.5rem;
+ }
+ .head .fixedd ul.modall li:first-child{
+    text-align: left;
+    border-bottom: none;
+    padding-bottom: 0;
+    padding-top: 0.2rem;
+ }
+ .head .fixedd ul.modall li:last-child{
+    border-bottom: none;
+ }
+ .head .fixedd ul.modall a{
+    color: white;
+    transition: all 0.3s;
+ }
+ .head .fixedd ul.modall a:hover{
+    color: rgba(255, 197, 39, 1);
+ }
+.head button.menu{
+    display: none;
+    font-size: 2.3rem;
+    color: white;
+    cursor: pointer;
+}
+
+
+.head .bgUserTech {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;  
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 230; 
+ }
+.head .UserOrTechLog, .Intro .UserOrTechReg {
+    position: relative; 
+    z-index: 234;
+    color: black;
+    background-color: white;
+    width: 350px;
+    height: 230px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+.head .UserOrTechLog .titlee h6,.Intro .UserOrTechReg .titlee h6{
+    font-family: 'Cairo-700';
+}
+
+.head .UserOrTechLog button,.Intro .UserOrTechReg button{
+    background-color: rgba(255, 197, 39, 1);
+    width: 250px;
+    height:40px;
+    border-radius: 26px;
+    text-align: center;
+    font-size: .9rem;
+    color: white;
+    font-family: 'Cairo-700';
+}
+
+/* ---------------
+3)responsive
+ -----------------*/
+ @media (max-width: 768px) {
+    .head nav,.icon-user{
+        display: none;
+    }
+    .head button.menu{
+        display: block;
+        margin-right: 30rem;
+    }
+    .disp{
+        display: none;
+    }
+    .head .UserOrTechLog,.Intro .UserOrTechReg{
+        right: 15%;
+    }
+}
+@media (max-width: 576px) {
+    .head button.menu{
+        display: block;
+        margin-right: 21rem;
+    }
+    .head .UserOrTechLog{
+        right: 0rem;
+        background-color: rgb(245, 245, 245);
+    }
+}
+@media (max-width: 470px) {
+    .head button.menu{
+        display: block;
+        margin-right: 18rem;
+    }
+    .head .UserOrTechLog{
+        right: 0rem;
+        background-color: rgb(245, 245, 245);
+    }
+}
